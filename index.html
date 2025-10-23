@@ -8,11 +8,12 @@
   <style>
     .navbar {
       background-color: #fff;
-      padding: 1rem 4rem;
+      
     }
     .navbar-brand img {
       height: 35px;
       margin-right: 8px;
+  
     }
     .btn-register {
       background-color: #28a745;
@@ -200,32 +201,39 @@ a:hover {
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="image 1.png" alt="Nexcent Logo">
-        <span class="fw-bold fs-4 text-dark">Nexcent</span>
-      </a>
+ <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid  px-md-5"> <!-- Equal padding left-right -->
+    
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center ms-lg-5" href="#">
+      <img src="image 1.png" alt="Nexcent Logo" class="img-fluid " style="height:40px; ">
+      <span class="fw-bold fs-4 text-dark">Nexcent</span>
+    </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse  " id="navbarNav">
-        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Features</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Community</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Pricing</a></li>
-        </ul>
-      </div>
-
-      <div class="d-none d-lg-block">
-        <a href="#" class="btn btn-register">Register Now →</a>
-      </div>
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Community</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#">Pricing</a></li>
+      </ul>
     </div>
-  </nav>
+
+    <!-- Register Button -->
+    <div class="d-none d-lg-block">
+      <a href="#" class="btn btn-register">Register Now →</a>
+    </div>
+
+  </div>
+</nav>
+
 
 <!-- ====== Section 2: Lessons and Insights ====== -->
 <section class="py-5 bg-light">
@@ -384,7 +392,7 @@ a:hover {
     <div class="row align-items-center">
 
       <!-- LEFT TEXT -->
-      <div class="col-md-5 mb-4 mb-md-0">
+      <div class="col-md-5 col-lg-7 mb-4 mb-md-0">
         <h2 class="fw-bold mb-3">
           Helping a local <br>
           <span class="text-success">business reinvent itself</span>
@@ -393,7 +401,7 @@ a:hover {
       </div>
 
       <!-- RIGHT STATS GRID -->
-      <div class="col-md-7">
+      <div class="col-md-7 col-lg-5 ">
         <div class="row g-4">
           
           <div class="col-6 d-flex align-items-center">
@@ -489,7 +497,7 @@ a:hover {
 
       <!-- LEFT: Main Image -->
       <div class="col-md-5 text-center">
-        <img src="./imageeee 09.png" alt="Customer Logo" class="img-fluid rounded shadow-sm">
+        <img src="./imageeee 09.png" width="80%" alt="Customer Logo" class="img-fluid rounded shadow-sm">
       </div>
 
       <!-- RIGHT: Text Content -->
